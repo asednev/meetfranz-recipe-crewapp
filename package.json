@@ -1,0 +1,14 @@
+{
+  "id": "crew",
+  "name": "Crew",
+  "version": "0.0.1",
+  "description": "Crew Messaging and Scheduling",
+  "main": "index.js",
+  "author": "Alexey Sednev",
+  "license": "MIT",
+  "repository": "https://github.com/asednev/franz-crewapp-beta.git",
+  "config": {
+    "serviceURL": "https://www.crewapp.com/app/",
+    "hasTeamId": false
+  }
+}
