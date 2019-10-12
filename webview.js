@@ -22,6 +22,9 @@ module.exports = (Franz) => {
     const mutedGroupIds = pageView.model
       .get("groupMemberships")
       .models
+      .filter(x => x.attributes)
+      .filter(x => x.attributes.groupId)
+      .filter(x => x.attributes.userId)
       .filter(x => x.attributes.userId.id === userId)
       .filter(x => x.attributes.muteEndTime && x.attributes.muteEndTime > new Date())
       .map(x => x.attributes.groupId.id);
